@@ -240,7 +240,7 @@ header .ul-login {
 }
 
 .intro-img {
-  width: 45%;
+  width: 40%;
 }
 
 /* Input section */
@@ -325,6 +325,7 @@ header .ul-login {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
+  padding: 0 6rem 2rem;
 }
 
 .feature::after {
@@ -338,9 +339,12 @@ header .ul-login {
 }
 
 .feature-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   background-color: #fff;
-  padding: 7rem 3rem 3rem 3rem;
+  padding: 3rem 1rem 1rem 1rem;
   border-radius: .5rem;
   z-index: 1;
 }
@@ -535,6 +539,7 @@ footer .icons img:hover {
     transition: 0.3s;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 99;
   }
   header .nav-menu.active {
     left: 0;
@@ -552,6 +557,8 @@ footer .icons img:hover {
             flex-direction: column-reverse;
   }
   .intro-img {
+    position: relative;
+    right: 6rem;
     padding-bottom: 4rem;
   }
   .intro-text {
@@ -566,7 +573,8 @@ footer .icons img:hover {
     padding: 4rem 0;
   }
   .intro-text .btn-large {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
   .feature {
     -webkit-box-orient: vertical;
@@ -574,6 +582,7 @@ footer .icons img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding: 0 1rem 0 1rem;
   }
   .feature::after {
     top: 20%;
@@ -592,7 +601,7 @@ footer .icons img:hover {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .input-section .input-box {
+  .input-section {
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -602,6 +611,11 @@ footer .icons img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
+  }
+  .input-section .input-box {
+    width: 180%;
+    position: relative;
+    right: 40%;
   }
   .input-section .input-box .link-btn {
     width: 85%;
