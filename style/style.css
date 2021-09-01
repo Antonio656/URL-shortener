@@ -216,9 +216,9 @@ header .ul-login {
 }
 
 .intro-text h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 6rem;
+  line-height: 4.5rem;
   color: #3b3054;
 }
 
@@ -245,7 +245,7 @@ header .ul-login {
 
 /* Input section */
 .input-section {
-  background-color: #ede8e8;
+  background-color: #eff1f7;
 }
 
 .input-section .input-box {
@@ -289,7 +289,8 @@ header .ul-login {
   background-color: #2acfcf;
   border-radius: .5rem;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 0.7rem;
+  border: none;
   margin: 1rem 1rem;
   outline: none;
 }
@@ -510,7 +511,8 @@ footer .icons img:hover {
     height: 9rem;
   }
   header .logo {
-    margin: 0;
+    position: relative;
+    right: 4rem;
   }
   header .login {
     display: none;
@@ -570,7 +572,7 @@ footer .icons img:hover {
             align-items: center;
     width: 100%;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   .intro-text .btn-large {
     font-size: 1rem;

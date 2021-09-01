@@ -197,9 +197,9 @@ header {
 
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 6rem;
+    line-height: 4.5rem;
     color: $primary-dark-violet;
   }
 
@@ -229,7 +229,7 @@ header {
 /* Input section */
 
 .input-section {
-  background-color: $neutral-gray;
+  background-color: #eff1f7;
 
 
   .input-box {
@@ -266,7 +266,8 @@ header {
     background-color: $primary-cyan;
     border-radius: .5rem;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 0.7rem;
+    border: none;
     margin: 1rem 1rem;
     outline: none;
   }
@@ -485,7 +486,8 @@ footer {
     height: 9rem;
 
     .logo {
-      margin: 0;
+      position: relative;
+      right: 4rem;
     }
 
     .login {
@@ -547,7 +549,7 @@ footer {
     align-items: center;
     width: 100%;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 
     .btn-large {
       font-size: 1rem;
