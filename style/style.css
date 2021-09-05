@@ -59,6 +59,7 @@ header .nav-link {
   font-size: 1.3rem;
   font-weight: 400;
   color: white;
+  margin-left: 2rem;
 }
 
 header .nav-link:hover {
@@ -249,7 +250,7 @@ header .ul-login {
 }
 
 .input-section .input-box {
-  width: 85%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,7 +290,7 @@ header .ul-login {
   background-color: #2acfcf;
   border-radius: .5rem;
   cursor: pointer;
-  padding: 0.7rem;
+  padding: 1.3rem;
   border: none;
   margin: 1rem 1rem;
   outline: none;
@@ -463,6 +464,12 @@ footer .icons img:hover {
 
 /* Media Queries*/
 /* Tablet*/
+@media (max-width: 1550px) {
+  .input-section .link-btn {
+    padding: 1.1rem;
+  }
+}
+
 @media (max-width: 985px) {
   .intro-text {
     width: 50%;
@@ -643,5 +650,79 @@ footer .icons img:hover {
   .icons img {
     margin-right: 1rem;
   }
+  .lists .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-width: 150%;
+    width: 100%;
+    text-align: center;
+  }
+  .lists .long-link {
+    width: 100%;
+    padding: 4px 4px 4px 0;
+    border-bottom: 1px solid #9e9aa7;
+    width: 100%;
+  }
+  .lists .short-link {
+    padding: 4px 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  .lists .list button {
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.lists {
+  width: 100%;
+  margin: auto;
+  margin-top: -40px;
+}
+
+.lists .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 1rem;
+  max-width: 80%;
+  width: auto;
+}
+
+.lists .long-link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #232127;
+}
+
+.lists .short-link {
+  color: #2acfcf;
+}
+
+.lists .list button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #2acfcf;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

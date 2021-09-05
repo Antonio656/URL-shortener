@@ -64,6 +64,7 @@ header {
     font-size: 1.3rem;
     font-weight: 400;
     color: white;
+    margin-left: 2rem;
   }
 
   .nav-link:hover {
@@ -233,7 +234,7 @@ header {
 
 
   .input-box {
-    width: 85%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +267,7 @@ header {
     background-color: $primary-cyan;
     border-radius: .5rem;
     cursor: pointer;
-    padding: 0.7rem;
+    padding: 1.3rem;
     border: none;
     margin: 1rem 1rem;
     outline: none;
@@ -434,6 +435,17 @@ footer {
 /* Media Queries*/
 
 /* Tablet*/
+
+@media (max-width: 1550px) {
+  .input-section {
+    .link-btn {
+      padding: 1.1rem;
+    }
+  }
+
+
+}
+
 @media (max-width: 985px) {
   .intro-text {
     width: 50%;
@@ -477,6 +489,7 @@ footer {
   footer .foot-container {
     grid-template-columns: 1.2fr 1fr 1fr 1fr 0.7fr;
   }
+
 }
 
 /* Mobile*/
@@ -516,7 +529,7 @@ footer {
       transition: 0.3s;
       box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
-        z-index: 99;
+      z-index: 99;
     }
 
     .nav-menu.active {
@@ -539,10 +552,10 @@ footer {
 
   .intro-img {
     position: relative;
-    right:6rem;
+    right: 6rem;
     padding-bottom: 4rem;
-    
-  } 
+
+  }
 
   .intro-text {
     display: flex;
@@ -590,7 +603,7 @@ footer {
     margin: 0 auto;
 
     .input-box {
-      width:180%;
+      width: 180%;
       position: relative;
       right: 40%;
 
@@ -627,4 +640,76 @@ footer {
   .icons img {
     margin-right: 1rem;
   }
+
+  .lists{
+    
+    .list {
+      flex-direction: column;
+      align-items: unset;
+      margin-bottom: 10px;
+      overflow: hidden;
+      max-width: 150%;
+      width:100%;
+      text-align: center;
+    }
+    .long-link {
+      width: 100%;
+      padding: 4px 4px 4px 0;
+      border-bottom: 1px solid $neutral-grayish-violet;
+      width: 100%;
+    }
+    .short-link {
+      padding: 4px 0;
+      overflow: hidden;
+      width: 100%;
+    }
+    .list button {
+      padding: 8px 20px;
+      border-radius: 6px;
+      margin-left:0;
+      width: 100%;
+    }
+  
+  }
+
+  
+}
+
+
+.lists {
+  width: 100%;
+  margin: auto;
+  margin-top: -40px;
+
+  .list {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    width: auto;
+  }
+
+  .long-link {
+    flex: 1;
+    color: $neutral-very-dark-violet;
+  }
+
+  .short-link {
+    color: $primary-cyan;
+  }
+
+  .list button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: $primary-cyan;
+    cursor: pointer;
+  }
+
 }
